@@ -61,4 +61,24 @@ fun main() {
     println(student2)
     val student3 = KarshnaCStrident(Pair("reza","09153016382"),"NOTING")
     println(student3)
+
+    val lambda_fun = { x:Int , y:Int ->
+        println("\n\n-----------start lambda-----------")
+        println((x + y))
+        println("enter a statement ->")
+        var input :String = readln()
+        while (input !="Finish"){
+            when {
+                input == "Hi" -> println("Hi!")
+                input == "How are you" -> println("Fine!")
+                input == "where are you" -> println("In Your Mind!")
+
+            }
+            input = readln()
+        }
+
+        println("-----------finish lambda----------\n\n")
+    }
+
+    lambda_fun(2,3)
 }
